@@ -1,3 +1,8 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+import java.util.Random;
+
 public class FirstClass {
 
     public static void main(String[] args) {
@@ -44,9 +49,33 @@ public class FirstClass {
         friends++;
 
         System.out.println(friends);
+
+
+         String name = JOptionPane.showInputDialog("Enter your name");
+         JOptionPane.showMessageDialog(null,"Hello " + name);
+
+         int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+         JOptionPane.showMessageDialog(null, "Hello, your age is " + age);
+
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your age"));
+        JOptionPane.showMessageDialog(null, "Hello, your height is " + height);
+
+
+
+
+        //use random class to generate random numbers in a range
+        Random random = new Random();
+
+        int x = random.nextInt(7);
+
+        System.out.println(x);
         */
 
+        int age = 3;
 
-
+        if(age>=21){
+            System.out.println("You are older than 21!");
+        }
+        System.out.println("You're a kid");
     }
 }
